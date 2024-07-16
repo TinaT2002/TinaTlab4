@@ -26,15 +26,15 @@
         }).addTo(map);
 
         function getColor(d) {
-            return d > 2000 ? '#800026' :
-                   d > 1500 ? '#BD0026' :
-                   d > 1000 ? '#E31A1C' :
-                   d > 500  ? '#FC4E2A' :
-                   d > 200  ? '#FD8D3C' :
-                   d > 100  ? '#FEB24C' :
-                   d > 50   ? '#FED976' :
-                              '#FFEDA0';
-        }
+    	    return d > 2000 ? '#01594e' :  // Dark Teal
+    		   d > 1500 ? '#018272' :  // Teal
+    		   d > 1000 ? '#03a498' :  // Medium Teal
+    		   d > 500  ? '#03c6bd' :  // Base Color
+    		   d > 200  ? '#03d9c8' :  // Light Teal
+    		   d > 100  ? '#03e4d2' :  // Lighter Teal
+    		   d > 50   ? '#03f0dc' :  // Very Light Teal
+    		              '#03fcd3';   // Lightest Teal
+    	}
 
         function style(feature) {
             return {
